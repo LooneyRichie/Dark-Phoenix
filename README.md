@@ -346,7 +346,7 @@ sudo apt install build-essential cmake
 
 ## 📜 **LEGAL & LICENSING**
 
-- **License**: MIT License (open for collaboration)
+- **License**: Custom License
 - **Patents**: Core security and AI technologies (pending)
 - **Compliance**: FAA Part 107, FCC, privacy regulations
 - **Insurance**: Comprehensive liability and product coverage
