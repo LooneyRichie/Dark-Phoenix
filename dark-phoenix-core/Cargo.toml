@@ -1,0 +1,30 @@
+[package]
+name = "dark-phoenix-core"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "Core orchestration and command system for Dark Phoenix drone"
+
+[dependencies]
+tokio.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+uuid.workspace = true
+chrono.workspace = true
+anyhow.workspace = true
+config.workspace = true
+
+# Internal modules - only load as needed to avoid circular dependencies
+# threat-detection = { path = "../threat-detection" }
+# deterrence-suite = { path = "../deterrence-suite" }
+# police-contact = { path = "../police-contact" }
+# shield-system = { path = "../shield-system" }
+# fire-suppression = { path = "../fire-suppression" }
+# medical-response = { path = "../medical-response" }
+# anti-hacking = { path = "../anti-hacking" }
+# symbolic-intelligence = { path = "../symbolic-intelligence" }
+# flight-control = { path = "../flight-control" }

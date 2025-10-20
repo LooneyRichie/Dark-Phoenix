@@ -1,0 +1,43 @@
+[workspace]
+resolver = "2"
+members = [
+    "dark-phoenix-core",
+    "threat-detection",
+    "deterrence-suite", 
+    "police-contact",
+    "shield-system",
+    "fire-suppression",
+    "medical-response",
+    "anti-hacking",
+    "symbolic-intelligence",
+    "flight-control"
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+authors = ["Looney <looney@darkphoenix.com>"]
+license = "MIT"
+description = "Dark Phoenix Security Drone - Mythic-grade autonomous protection system"
+repository = "https://github.com/looney/dark-phoenix"
+keywords = ["drone", "security", "protection", "rust", "mythic"]
+
+[workspace.dependencies]
+tokio = { version = "1.0", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+thiserror = "1.0"
+tracing = "0.1"
+tracing-subscriber = "0.3"
+uuid = { version = "1.0", features = ["v4", "serde"] }
+chrono = { version = "0.4", features = ["serde"] }
+reqwest = { version = "0.11", features = ["json", "rustls-tls"] }
+rustls = "0.21"
+anyhow = "1.0"
+config = "0.13"
+clap = { version = "4.0", features = ["derive"] }
+rand = "0.8"
+
+# Hardware interfacing (placeholders for now - disabled to avoid system dependencies)
+# rppal = "0.14"  # Raspberry Pi GPIO
+# serialport = "4.2"

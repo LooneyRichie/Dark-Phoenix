@@ -1,0 +1,12 @@
+[package]
+name = "symbolic-intelligence"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "Mythic intelligence layer with LED glyphs and ceremonial patterns"
+
+[dependencies]
+tokio.workspace = true
+serde.workspace = true
+dark-phoenix-core = { path = "../dark-phoenix-core" }

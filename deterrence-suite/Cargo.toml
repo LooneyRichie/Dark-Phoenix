@@ -1,0 +1,28 @@
+[package]
+name = "deterrence-suite"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "Mythic deterrence systems - sirens, strobes, and ceremonial voice"
+
+[dependencies]
+tokio.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+tracing.workspace = true
+uuid.workspace = true
+chrono.workspace = true
+anyhow.workspace = true
+
+# Audio libraries for voice synthesis and sound generation (disabled for now)
+# rodio = "0.17"
+# hound = "3.5"
+# synthesizer = "0.4"  # Commented out for now
+
+# Hardware control (placeholders - disabled for now)
+# rppal.workspace = true
+
+# Dark Phoenix core types
+dark-phoenix-core = { path = "../dark-phoenix-core" }

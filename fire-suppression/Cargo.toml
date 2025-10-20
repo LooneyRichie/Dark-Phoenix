@@ -1,0 +1,25 @@
+[package]
+name = "fire-suppression"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "Autonomous fire suppression system with heat detection and extinguisher deployment"
+
+[dependencies]
+tokio.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+tracing.workspace = true
+uuid.workspace = true
+chrono.workspace = true
+anyhow.workspace = true
+rand.workspace = true
+
+# Hardware control (disabled for now)
+# rppal.workspace = true
+# serialport.workspace = true
+
+# Dark Phoenix core types
+dark-phoenix-core = { path = "../dark-phoenix-core" }

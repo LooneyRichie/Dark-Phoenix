@@ -1,0 +1,12 @@
+[package]
+name = "medical-response"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "Emergency medical response and vitals monitoring"
+
+[dependencies]
+tokio.workspace = true
+serde.workspace = true
+dark-phoenix-core = { path = "../dark-phoenix-core" }
